@@ -9,15 +9,30 @@ import {Tweet} from '../models/tweet.models';
 })
 export class TweetComponent implements OnInit {
 
-miTweet: Tweet;
 
-  constructor() {
-this.miTweet = {
+  listaTweets = [];
+  nuevoTweet: Tweet;
+  
+constructor(){
+   let miTweet = {
   id: 1,
   texto: "hola    fghjk",
   autor:"Andres Rodriguez"
 };
-  }
+let miTweet2 = {
+  id: 2,
+  texto: "hola    fghjk",
+  autor:"Andres Rodriguez2"
+};
+this.listaTweets.push(miTweet);
+this.listaTweets.push(miTweet2);
+console.log('lista', this.listaTweets);
+
+
+
+}
+
+
   ngOnInit(): void {
   }
 
