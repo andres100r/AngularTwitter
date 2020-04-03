@@ -3,13 +3,15 @@
 <h2>{{tweet.texto}}</h2>
 <h1>autor: </h1>
 <h2>{{tweet.autor}}</h2>
-
 </div>
+
+
 <div>
 <label >texto</label>
-<input type="text" [(ngModel)]="miTweet.texto">
+<input type="text" [(ngModel)]="nuevoTweet.texto">
 <label >autor</label>
-<input type="text" [(ngModel)]="miTweet.autor">
+<input type="text" [(ngModel)]="nuevoTweet.autor">
+<button (click)="adicionarNuevoTweet">add Tweet</button>
 
 </div>
 

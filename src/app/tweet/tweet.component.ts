@@ -14,7 +14,14 @@ export class TweetComponent implements OnInit {
   nuevoTweet: Tweet;
   
 constructor(){
-   let miTweet = {
+  this.nuevoTweet = {
+    id: 0,
+    texto: "",
+    autor:""
+  };
+
+
+  let miTweet = {
   id: 1,
   texto: "hola    fghjk",
   autor:"Andres Rodriguez"
@@ -27,9 +34,11 @@ let miTweet2 = {
 this.listaTweets.push(miTweet);
 this.listaTweets.push(miTweet2);
 console.log('lista', this.listaTweets);
+}
 
 
-
+adicionarNuevoTweet(){
+  this.listaTweets.push(this.nuevoTweet);
 }
 
 
