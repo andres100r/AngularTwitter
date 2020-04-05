@@ -7,6 +7,7 @@ import {Tweet} from '../models/tweet.models';
   templateUrl: './tweet.component.html',
   styleUrls: ['./tweet.component.css']
 })
+
 export class TweetComponent implements OnInit {
 
 
@@ -39,6 +40,7 @@ console.log('lista', this.listaTweets);
 
 adicionarNuevoTweet(){
   this.listaTweets.push(this.nuevoTweet);
+  this.nuevoTweet = new Tweet ();
 }
 
 
